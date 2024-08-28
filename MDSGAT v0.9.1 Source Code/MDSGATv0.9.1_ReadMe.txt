@@ -1,0 +1,49 @@
+# MDSGAT v0.9.1
+Application package pre-release version
+
+NDSGAT is a functional MDS script generator and analysis tool for use on a local machine in conjunction with an external HPC system.
+
+MDSGAT v0.9.x currently supports the following:
+MDS Packages:
+- GROMACS
+
+HPC Queue Systems:
+- PBS
+
+ForceField Models:
+- amber99sb-ildn (natively)
+- amber03 (natively)
+- amber94 (natively)
+- amber96 (natively)
+- amber99 (natively)
+- amber99sb (natively)
+- ambergs (natively)
+- charmm27*
+- gromos96*
+- opls-aa/l*
+
+*Some advanced configuration/editing to mdp files may be necessary for optimal functionality. 
+
+Analysis Methods:
+- RMSD (Root Mean Square Deviation)
+- RMSF (Root Mean Square Fluctuation)
+- Radii of Gyration
+- PCA** (Principal Component Analysis)
+- SASA*** (Solvent Accessible Surface Area)
+- H-Bond Analysis***
+
+**Performance may be sub-optimal depending on simulation conditions. 
+*** Currently unusable for application version
+
+
+# Setup and Application
+Windows:
+1. Download the zipped MDSGAT vX.X.X file.
+2. Unzip the downloaded folder to a location of your choice (Ensure that the .exe and _internal folder are in the same directory).
+3. Run MDSGAT.exe
+
+MacOS or Linux using Python:
+1. Simply copy all of the included python files in the release into a single folder on your machine.
+2. Open the python files using your IDE of choice.
+3. Install any missing dependencies noted using PIP or similar.
+4. Run the Initialise.py file to get started. All further instructions should be contained within the MDGAT program.
